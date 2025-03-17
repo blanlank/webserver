@@ -1,0 +1,186 @@
+[01;34m.[00m
+├── [01;34mbuild[00m
+├── [01;34mclient[00m
+│   ├── [01;34mcomponents[00m
+│   │   ├── EmailInput.tsx
+│   │   ├── FormCard.tsx
+│   │   ├── Header.tsx
+│   │   ├── Head.tsx
+│   │   ├── MessageInputBar.tsx
+│   │   ├── Message.tsx
+│   │   ├── NameAvatar.tsx
+│   │   ├── PasswordInput.tsx
+│   │   ├── RoomEntry.tsx
+│   │   └── UsernameInput.tsx
+│   ├── [01;34mhooks[00m
+│   │   └── useLoading.ts
+│   ├── jest.config.mjs
+│   ├── jest-global-setup.js
+│   ├── [01;34mlib[00m
+│   │   ├── apiSerialization.ts
+│   │   ├── api.ts
+│   │   ├── apiTypes.ts
+│   │   └── hasAuth.ts
+│   ├── [01;34m__mocks__[00m
+│   │   ├── [01;34m@formkit[00m
+│   │   │   └── auto-animate.ts
+│   │   └── [01;34mnext[00m
+│   │       └── router.ts
+│   ├── next.config.js
+│   ├── next-env.d.ts
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── [01;34mpages[00m
+│   │   ├── _app.js
+│   │   ├── chat.tsx
+│   │   ├── index.tsx
+│   │   └── login.tsx
+│   ├── postcss.config.js
+│   ├── [01;34mpublic[00m
+│   │   ├── [01;35mboost.jpg[00m
+│   │   └── favicon.ico
+│   ├── [01;34mstyles[00m
+│   │   ├── globals.css
+│   │   └── Home.module.css
+│   ├── tailwind.config.js
+│   ├── [01;34m__tests__[00m
+│   │   ├── [01;34mcomponents[00m
+│   │   │   ├── EmailInput.tsx
+│   │   │   ├── FormCard.tsx
+│   │   │   ├── Header.tsx
+│   │   │   ├── MessageInputBar.tsx
+│   │   │   ├── Message.tsx
+│   │   │   ├── NameAvatar.tsx
+│   │   │   ├── PasswordInput.tsx
+│   │   │   ├── RoomEntry.tsx
+│   │   │   ├── [01;34m__snapshots__[00m
+│   │   │   │   ├── EmailInput.tsx.snap
+│   │   │   │   ├── FormCard.tsx.snap
+│   │   │   │   ├── Header.tsx.snap
+│   │   │   │   ├── MessageInputBar.tsx.snap
+│   │   │   │   ├── Message.tsx.snap
+│   │   │   │   ├── NameAvatar.tsx.snap
+│   │   │   │   ├── PasswordInput.tsx.snap
+│   │   │   │   ├── RoomEntry.tsx.snap
+│   │   │   │   └── UsernameInput.tsx.snap
+│   │   │   └── UsernameInput.tsx
+│   │   ├── [01;34mlib[00m
+│   │   │   └── api.ts
+│   │   └── [01;34mpages[00m
+│   │       ├── chat.tsx
+│   │       ├── index.tsx
+│   │       ├── login.tsx
+│   │       └── [01;34m__snapshots__[00m
+│   │           ├── chat.tsx.snap
+│   │           ├── index.tsx.snap
+│   │           └── login.tsx.snap
+│   └── tsconfig.json
+├── directory_tree.txt
+├── [01;34mdoc[00m
+│   ├── 01-architecture.adoc
+│   ├── 02-local-dev.adoc
+│   ├── 03-fork-modify-deploy.adoc
+│   ├── index.adoc
+│   ├── [01;35mservertech_arch.jpg[00m
+│   └── [01;35mws_api.svg[00m
+├── docker-compose.yml
+├── Dockerfile
+├── LICENSE_1_0.txt
+├── My_README.md
+├── README.md
+├── [01;34mserver[00m
+│   ├── CMakeLists.txt
+│   ├── [01;34minclude[00m
+│   │   ├── [01;34mapi[00m
+│   │   │   ├── api_types.hpp
+│   │   │   ├── auth.hpp
+│   │   │   └── chat_websocket.hpp
+│   │   ├── business_types.hpp
+│   │   ├── business_types_metadata.hpp
+│   │   ├── error.hpp
+│   │   ├── http_session.hpp
+│   │   ├── listener.hpp
+│   │   ├── pch.hpp
+│   │   ├── request_context.hpp
+│   │   ├── [01;34mservices[00m
+│   │   │   ├── cookie_auth_service.hpp
+│   │   │   ├── mysql_client.hpp
+│   │   │   ├── pubsub_service.hpp
+│   │   │   ├── redis_client.hpp
+│   │   │   ├── redis_serialization.hpp
+│   │   │   ├── room_history_service.hpp
+│   │   │   └── session_store.hpp
+│   │   ├── shared_state.hpp
+│   │   ├── static_files.hpp
+│   │   ├── timestamp.hpp
+│   │   └── [01;34mutil[00m
+│   │       ├── async_mutex.hpp
+│   │       ├── base64.hpp
+│   │       ├── cookie.hpp
+│   │       ├── email.hpp
+│   │       ├── password_hash.hpp
+│   │       ├── scrypt.hpp
+│   │       └── websocket.hpp
+│   ├── [01;34msrc[00m
+│   │   ├── [01;34mapi[00m
+│   │   │   ├── api_types.cpp
+│   │   │   ├── auth.cpp
+│   │   │   └── chat_websocket.cpp
+│   │   ├── error.cpp
+│   │   ├── http_session.cpp
+│   │   ├── listener.cpp
+│   │   ├── main.cpp
+│   │   ├── request_context.cpp
+│   │   ├── [01;34mseparate-compilation[00m
+│   │   │   ├── boost_asio.cpp
+│   │   │   ├── boost_beast.cpp
+│   │   │   ├── boost_mysql.cpp
+│   │   │   └── boost_redis.cpp
+│   │   ├── [01;34mservices[00m
+│   │   │   ├── cookie_auth_service.cpp
+│   │   │   ├── mysql_client.cpp
+│   │   │   ├── pubsub_service.cpp
+│   │   │   ├── redis_client.cpp
+│   │   │   ├── redis_serialization.cpp
+│   │   │   ├── room_history_service.cpp
+│   │   │   └── session_store.cpp
+│   │   ├── shared_state.cpp
+│   │   ├── static_files.cpp
+│   │   └── [01;34mutil[00m
+│   │       ├── base64.cpp
+│   │       ├── cookie.cpp
+│   │       ├── email.cpp
+│   │       ├── password_hash.cpp
+│   │       ├── scrypt.cpp
+│   │       └── websocket.cpp
+│   └── [01;34mtest[00m
+│       ├── [01;34mapi[00m
+│       │   └── api_types.cpp
+│       ├── CMakeLists.txt
+│       ├── entry_point.cpp
+│       ├── [01;34mservices[00m
+│       │   ├── pubsub_service.cpp
+│       │   └── redis_serialization.cpp
+│       └── [01;34mutil[00m
+│           ├── async_mutex.cpp
+│           ├── base64.cpp
+│           ├── cookie.cpp
+│           ├── email.cpp
+│           ├── password_hash.cpp
+│           └── scrypt.cpp
+├── [01;34mtest[00m
+│   └── [01;34mintegration[00m
+│       ├── api_types.py
+│       ├── conftest.py
+│       ├── __init__.py
+│       ├── requirements.in
+│       ├── requirements.txt
+│       ├── test_create_account.py
+│       ├── test_login.py
+│       └── test_websocket.py
+└── [01;34mtools[00m
+    ├── deploy.sh
+    ├── [01;32mfile_headers.py[00m
+    └── [01;32minstall-boost.sh[00m
+
+35 directories, 148 files

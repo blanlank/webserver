@@ -8,6 +8,8 @@
 cmake_minimum_required(VERSION 3.16.0)
 project(servertech_chat)
 
+find_package(Threads REQUIRED)
+
 # Boost.Charconv is required by Boost.MySQL
 find_package(Boost REQUIRED COMPONENTS headers json regex url charconv)
 
@@ -16,6 +18,9 @@ find_package(OpenSSL REQUIRED)
 
 # ICU is required by Boost.Regex
 find_package(ICU COMPONENTS data i18n uc REQUIRED)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # This library is consumed by the actual server and the tests
 add_library(
@@ -62,6 +67,7 @@ add_library(
 target_link_libraries(
     servertech_chat
     PUBLIC
+    Threads::Threads
     Boost::headers
     Boost::json
     Boost::regex
@@ -107,7 +113,10 @@ target_precompile_headers(
 
 # The actual server executable
 add_executable(main src/main.cpp)
-target_link_libraries(main PRIVATE servertech_chat)
+target_link_libraries(main 
+	PRIVATE 
+	Threads::Threads
+	servertech_chat)
 
 # Testing
 include(CTest)

@@ -81,10 +81,10 @@ static mysql::pool_params get_pool_params()
         mysql::host_and_port{get_mysql_hostname()},
 
         // The username to log in as
-        "root",
+        "zyf",
 
         // The password
-        "",
+        "likun0611",
 
         // The database to use
         "servertech_chat",
@@ -111,9 +111,14 @@ class mysql_client_impl final : public mysql_client
         // The database may not be created when we run this, so we leave it blank.
         mysql::connect_params params{
             mysql::host_and_port{get_mysql_hostname()},
-            "root",
-            "",
-            "",
+            // The username to log in as
+        	"zyf",
+
+        	// The password
+        	"likun0611",
+
+        	// The database to use
+        	"servertech_chat",
         };
         params.ssl = mysql::ssl_mode::disable;
         params.multi_queries = true;

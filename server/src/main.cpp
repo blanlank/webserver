@@ -22,6 +22,8 @@ using namespace chat;
 
 int main(int argc, char* argv[])
 {
+    asio::io_context io_ctx;
+    auto redis_client = create_redis_client(io_ctx.get_executor());
     // Check command line arguments.
     if (argc != 4)
     {
@@ -79,6 +81,7 @@ int main(int argc, char* argv[])
     // Run the io_context. This will block until the context is stopped by
     // a signal and all outstanding async tasks are finished.
     ioc.run();
+    io_ctx.run();
 
     // (If we get here, it means we got a SIGINT or SIGTERM)
     return EXIT_SUCCESS;
