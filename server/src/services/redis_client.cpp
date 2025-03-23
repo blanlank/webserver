@@ -39,6 +39,7 @@ public:
 
     void start_run() final override
     {
+        
         // The host to connect to. Defaults to localhost
         const char* host_c_str = std::getenv("REDIS_HOST");
         std::string host = host_c_str ? host_c_str : "localhost";
@@ -48,6 +49,18 @@ public:
         cfg.health_check_interval = std::chrono::seconds(10);
         //cfg.health_check_interval = std::chrono::seconds::zero();  // Disable health checks for now
         conn_.async_run(cfg, {}, asio::detached);
+        
+        
+        /*
+        const char* host_c_str = std::getenv("REDIS_HOST");
+    	std::string host = host_c_str ? host_c_str : "127.0.0.1";  // 明确使用本地 IP
+    	uint16_t port = 6379;  // 默认端口
+
+    	redis::config cfg;
+    	cfg.addr.host = host;
+    	cfg.addr.port = port;  // 显式指定端口
+    	cfg.health_check_interval = std::chrono::seconds(10);
+    	conn_.async_run(cfg, {}, asio::detached);*/
     }
 
     void cancel() final override { conn_.cancel(); }

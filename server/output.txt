@@ -1,0 +1,349 @@
+.
+├── build
+│   ├── CMakeCache.txt
+│   ├── CMakeFiles
+│   │   ├── 3.16.3
+│   │   │   ├── CMakeCCompiler.cmake
+│   │   │   ├── CMakeCXXCompiler.cmake
+│   │   │   ├── CMakeDetermineCompilerABI_C.bin
+│   │   │   ├── CMakeDetermineCompilerABI_CXX.bin
+│   │   │   ├── CMakeSystem.cmake
+│   │   │   ├── CompilerIdC
+│   │   │   │   ├── a.out
+│   │   │   │   ├── CMakeCCompilerId.c
+│   │   │   │   └── tmp
+│   │   │   └── CompilerIdCXX
+│   │   │       ├── a.out
+│   │   │       ├── CMakeCXXCompilerId.cpp
+│   │   │       └── tmp
+│   │   ├── cmake.check_cache
+│   │   ├── CMakeDirectoryInformation.cmake
+│   │   ├── CMakeError.log
+│   │   ├── CMakeOutput.log
+│   │   ├── CMakeRuleHashes.txt
+│   │   ├── CMakeTmp
+│   │   ├── ContinuousBuild.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ContinuousConfigure.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ContinuousCoverage.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── Continuous.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ContinuousMemCheck.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ContinuousStart.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ContinuousSubmit.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ContinuousTest.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ContinuousUpdate.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ExperimentalBuild.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ExperimentalConfigure.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ExperimentalCoverage.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── Experimental.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ExperimentalMemCheck.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ExperimentalStart.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ExperimentalSubmit.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ExperimentalTest.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── ExperimentalUpdate.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── main.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── CXX.includecache
+│   │   │   ├── DependInfo.cmake
+│   │   │   ├── depend.internal
+│   │   │   ├── depend.make
+│   │   │   ├── flags.make
+│   │   │   ├── link.txt
+│   │   │   ├── progress.make
+│   │   │   └── src
+│   │   │       └── main.cpp.o
+│   │   ├── Makefile2
+│   │   ├── Makefile.cmake
+│   │   ├── NightlyBuild.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── NightlyConfigure.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── NightlyCoverage.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── Nightly.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── NightlyMemCheck.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── NightlyMemoryCheck.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── NightlyStart.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── NightlySubmit.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── NightlyTest.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── NightlyUpdate.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── DependInfo.cmake
+│   │   │   └── progress.make
+│   │   ├── progress.marks
+│   │   ├── servertech_chat.dir
+│   │   │   ├── build.make
+│   │   │   ├── cmake_clean.cmake
+│   │   │   ├── cmake_clean_target.cmake
+│   │   │   ├── cmake_pch.hxx
+│   │   │   ├── cmake_pch.hxx.cxx
+│   │   │   ├── cmake_pch.hxx.gch
+│   │   │   ├── CXX.includecache
+│   │   │   ├── DependInfo.cmake
+│   │   │   ├── depend.internal
+│   │   │   ├── depend.make
+│   │   │   ├── flags.make
+│   │   │   ├── link.txt
+│   │   │   ├── progress.make
+│   │   │   └── src
+│   │   │       ├── api
+│   │   │       │   ├── api_types.cpp.o
+│   │   │       │   ├── auth.cpp.o
+│   │   │       │   └── chat_websocket.cpp.o
+│   │   │       ├── error.cpp.o
+│   │   │       ├── http_session.cpp.o
+│   │   │       ├── listener.cpp.o
+│   │   │       ├── request_context.cpp.o
+│   │   │       ├── separate-compilation
+│   │   │       │   ├── boost_asio.cpp.o
+│   │   │       │   ├── boost_beast.cpp.o
+│   │   │       │   ├── boost_mysql.cpp.o
+│   │   │       │   └── boost_redis.cpp.o
+│   │   │       ├── services
+│   │   │       │   ├── cookie_auth_service.cpp.o
+│   │   │       │   ├── mysql_client.cpp.o
+│   │   │       │   ├── pubsub_service.cpp.o
+│   │   │       │   ├── redis_client.cpp.o
+│   │   │       │   ├── redis_serialization.cpp.o
+│   │   │       │   ├── room_history_service.cpp.o
+│   │   │       │   └── session_store.cpp.o
+│   │   │       ├── shared_state.cpp.o
+│   │   │       ├── static_files.cpp.o
+│   │   │       └── util
+│   │   │           ├── base64.cpp.o
+│   │   │           ├── cookie.cpp.o
+│   │   │           ├── email.cpp.o
+│   │   │           ├── password_hash.cpp.o
+│   │   │           ├── scrypt.cpp.o
+│   │   │           └── websocket.cpp.o
+│   │   └── TargetDirectories.txt
+│   ├── cmake_install.cmake
+│   ├── CTestTestfile.cmake
+│   ├── DartConfiguration.tcl
+│   ├── libservertech_chat.a
+│   ├── main
+│   ├── Makefile
+│   ├── test
+│   │   ├── CMakeFiles
+│   │   │   ├── CMakeDirectoryInformation.cmake
+│   │   │   ├── progress.marks
+│   │   │   └── unit_tests.dir
+│   │   │       ├── api
+│   │   │       │   └── api_types.cpp.o
+│   │   │       ├── build.make
+│   │   │       ├── cmake_clean.cmake
+│   │   │       ├── cmake_pch.hxx
+│   │   │       ├── cmake_pch.hxx.cxx
+│   │   │       ├── cmake_pch.hxx.gch
+│   │   │       ├── CXX.includecache
+│   │   │       ├── DependInfo.cmake
+│   │   │       ├── depend.internal
+│   │   │       ├── depend.make
+│   │   │       ├── entry_point.cpp.o
+│   │   │       ├── flags.make
+│   │   │       ├── link.txt
+│   │   │       ├── progress.make
+│   │   │       ├── services
+│   │   │       │   ├── pubsub_service.cpp.o
+│   │   │       │   └── redis_serialization.cpp.o
+│   │   │       └── util
+│   │   │           ├── async_mutex.cpp.o
+│   │   │           ├── base64.cpp.o
+│   │   │           ├── cookie.cpp.o
+│   │   │           ├── email.cpp.o
+│   │   │           ├── password_hash.cpp.o
+│   │   │           └── scrypt.cpp.o
+│   │   ├── cmake_install.cmake
+│   │   ├── CTestTestfile.cmake
+│   │   ├── Makefile
+│   │   └── unit_tests
+│   └── Testing
+│       └── Temporary
+├── CMakeLists.txt
+├── include
+│   ├── api
+│   │   ├── api_types.hpp
+│   │   ├── auth.hpp
+│   │   └── chat_websocket.hpp
+│   ├── business_types.hpp
+│   ├── business_types_metadata.hpp
+│   ├── error.hpp
+│   ├── http_session.hpp
+│   ├── listener.hpp
+│   ├── pch.hpp
+│   ├── request_context.hpp
+│   ├── services
+│   │   ├── cookie_auth_service.hpp
+│   │   ├── mysql_client.hpp
+│   │   ├── pubsub_service.hpp
+│   │   ├── redis_client.hpp
+│   │   ├── redis_serialization.hpp
+│   │   ├── room_history_service.hpp
+│   │   └── session_store.hpp
+│   ├── shared_state.hpp
+│   ├── static_files.hpp
+│   ├── timestamp.hpp
+│   └── util
+│       ├── async_mutex.hpp
+│       ├── base64.hpp
+│       ├── cookie.hpp
+│       ├── email.hpp
+│       ├── password_hash.hpp
+│       ├── scrypt.hpp
+│       └── websocket.hpp
+├── output.txt
+├── src
+│   ├── api
+│   │   ├── api_types.cpp
+│   │   ├── auth.cpp
+│   │   └── chat_websocket.cpp
+│   ├── error.cpp
+│   ├── http_session.cpp
+│   ├── listener.cpp
+│   ├── main.cpp
+│   ├── request_context.cpp
+│   ├── separate-compilation
+│   │   ├── boost_asio.cpp
+│   │   ├── boost_beast.cpp
+│   │   ├── boost_mysql.cpp
+│   │   └── boost_redis.cpp
+│   ├── services
+│   │   ├── cookie_auth_service.cpp
+│   │   ├── mysql_client.cpp
+│   │   ├── pubsub_service.cpp
+│   │   ├── redis_client.cpp
+│   │   ├── redis_serialization.cpp
+│   │   ├── room_history_service.cpp
+│   │   └── session_store.cpp
+│   ├── shared_state.cpp
+│   ├── static_files.cpp
+│   └── util
+│       ├── base64.cpp
+│       ├── cookie.cpp
+│       ├── email.cpp
+│       ├── password_hash.cpp
+│       ├── scrypt.cpp
+│       └── websocket.cpp
+└── test
+    ├── api
+    │   └── api_types.cpp
+    ├── CMakeLists.txt
+    ├── entry_point.cpp
+    ├── services
+    │   ├── pubsub_service.cpp
+    │   └── redis_serialization.cpp
+    └── util
+        ├── async_mutex.cpp
+        ├── base64.cpp
+        ├── cookie.cpp
+        ├── email.cpp
+        ├── password_hash.cpp
+        └── scrypt.cpp
+
+65 directories, 281 files

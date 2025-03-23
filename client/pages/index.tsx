@@ -20,6 +20,8 @@ type Inputs = {
   password: string;
 };
 
+console.log('[DEBUG] API Base URL:', process.env.NEXT_PUBLIC_API_BASE_URL);
+
 // The home page
 export default function HomePage() {
   const router = useRouter();

@@ -27,6 +27,7 @@
 #include "services/room_history_service.hpp"
 #include "shared_state.hpp"
 #include "util/websocket.hpp"
+#include <boost/algorithm/string/case_conv.hpp>
 
 using namespace chat;
 namespace asio = boost::asio;
@@ -47,6 +48,10 @@ static constexpr std::array<std::string_view, room_ids.size()> room_names{
     "Database connectors",
     "Web assembly",
 };
+
+static std::string get_redis_room_key(std::string_view room_id) {
+    return "chat:" + boost::algorithm::to_lower_copy(std::string(room_id));
+}
 
 // An owning type containing data for the hello event.
 struct hello_data
@@ -110,7 +115,10 @@ struct event_handler_visitor
         }
 
         // Store it in Redis
-        auto ids_result = co_await st.redis().store_messages(evt.roomId, msgs);
+        //auto ids_result = co_await st.redis().store_messages(evt.roomId, msgs);
+        std::string redis_key = "chat:" + boost::algorithm::to_lower_copy(evt.roomId);
+	auto ids_result = co_await st.redis().store_messages(redis_key, msgs);
+        
         if (ids_result.has_error())
             co_return std::move(ids_result).error();
         auto& ids = ids_result.value();
@@ -128,12 +136,39 @@ struct event_handler_visitor
         co_return error_with_message{};
     }
 
+    /*
     // Request room history event
     asio::awaitable<error_with_message> operator()(chat::request_room_history_event& evt) const
     {
+        
         // Get room history
         room_history_service svc(st.redis(), st.mysql());
-        auto history = co_await svc.get_room_history(evt.roomId);
+        //auto history = co_await svc.get_room_history(evt.roomId);
+        
+        std::string redis_key = get_redis_room_key(evt.roomId);
+        auto history = co_await svc.get_room_history(redis_key);
+        
+        if (history.has_error())
+            co_return std::move(history).error();
+
+        // Compose a room_history event
+        chat::room_history_event response_evt{evt.roomId, history->first, history->second};
+        auto payload = response_evt.to_json();
+
+        // Send it
+        co_return co_await ws.write(payload);
+    }
+    */
+    
+    // Request room history event
+    asio::awaitable<error_with_message> operator()(chat::request_room_history_event& evt) const
+    {
+        // 新增：房间键名规范化
+        std::string redis_key = get_redis_room_key(evt.roomId);
+    
+        // Get room history
+        room_history_service svc(st.redis(), st.mysql());
+        auto history = co_await svc.get_room_history(redis_key);  // 使用规范化后的键名
         if (history.has_error())
             co_return std::move(history).error();
 
